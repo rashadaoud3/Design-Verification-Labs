@@ -1,0 +1,57 @@
+xrun(64): 24.03-s007: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.03-s007: Started on Jul 23, 2025 at 00:11:10 EEST
+xrun
+	-sv
+	lab12.sv
+	lab12_tb.sv
+file: lab12.sv
+	module worklib.prbs:sv
+		errors: 0, warnings: 0
+file: lab12_tb.sv
+	module worklib.testprbs:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		testprbs
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.prbs:sv <0x3e9fc455>
+			streams:   3, words:   629
+		worklib.testprbs:sv <0x6981f8ce>
+			streams:   4, words:  2420
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           4       4
+		Scalar wires:        5       -
+		Always blocks:       2       2
+		Initial blocks:      2       2
+		Cont. assignments:   1       2
+		Pseudo assignments:  1       -
+	Writing initial simulation snapshot: worklib.testprbs:sv
+Loading snapshot worklib.testprbs:sv .................... Done
+xcelium> source /usr/cadence/installs/xcelium/XCELIUM2403/tools/xcelium/files/xmsimrc
+xcelium> run
+Time = 10 | rand = 1
+Time = 30 | rand = 1
+Time = 50 | rand = 0
+Time = 70 | rand = 0
+Time = 90 | rand = 0
+Time = 110 | rand = 1
+Time = 130 | rand = 1
+Time = 150 | rand = 1
+Time = 170 | rand = 1
+Time = 190 | rand = 0
+Time = 210 | rand = 1
+Time = 230 | rand = 0
+Time = 250 | rand = 1
+Time = 270 | rand = 1
+Time = 290 | rand = 0
+Time = 310 | rand = 0
+Simulation complete via $finish(1) at time 315 NS + 0
+./lab12_tb.sv:21 	$finish;
+xcelium> exit
+TOOL:	xrun(64)	24.03-s007: Exiting on Jul 23, 2025 at 00:11:10 EEST  (total: 00:00:00)

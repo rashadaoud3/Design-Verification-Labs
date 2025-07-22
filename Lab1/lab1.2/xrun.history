@@ -1,0 +1,2 @@
+#e1(23Jul2025:00:11:10): source ./xcelium.d/env.d/env.history.23Jul2025_00_11_10
+s1(23Jul2025:00:11:10):  xrun -sv lab12.sv lab12_tb.sv 
