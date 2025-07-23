@@ -1,0 +1,21 @@
+xrun(64): 24.03-s007: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.03-s007: Started on Jul 23, 2025 at 16:49:10 EEST
+xrun
+	-sv
+	lab2.sv
+	lab2_tb.sv
+Loading snapshot worklib.test_register_design:sv .................... Done
+xcelium> source /usr/cadence/installs/xcelium/XCELIUM2403/tools/xcelium/files/xmsimrc
+xcelium> run
+Time: 0 | addr = 00 | sel = 0 | wr = 0 | wdata = xxxx | rdata = xxxx
+Time: 5 | addr = 00 | sel = 0 | wr = 0 | wdata = xxxx | rdata = 0000
+Time: 30 | addr = 00 | sel = 1 | wr = 1 | wdata = 234a | rdata = 0000
+Time: 50 | addr = 00 | sel = 1 | wr = 0 | wdata = 234a | rdata = 0000
+Time: 55 | addr = 00 | sel = 1 | wr = 0 | wdata = 234a | rdata = 234a
+Time: 70 | addr = 10 | sel = 1 | wr = 1 | wdata = 2a2a | rdata = 234a
+Time: 90 | addr = 10 | sel = 1 | wr = 0 | wdata = 2a2a | rdata = 234a
+Time: 95 | addr = 10 | sel = 1 | wr = 0 | wdata = 2a2a | rdata = 2a2a
+Simulation complete via $finish(1) at time 190 NS + 0
+./lab2_tb.sv:49 	$finish;
+xcelium> exit
+TOOL:	xrun(64)	24.03-s007: Exiting on Jul 23, 2025 at 16:49:11 EEST  (total: 00:00:01)
