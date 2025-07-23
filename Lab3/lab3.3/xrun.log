@@ -1,0 +1,44 @@
+xrun(64): 24.03-s007: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.03-s007: Started on Jul 23, 2025 at 22:56:33 EEST
+xrun
+	-sv
+	lab33.sv
+	lab33_tb.sv
+Recompiling... reason: file './lab33_tb.sv' is newer than expected.
+	expected: Wed Jul 23 22:49:44 2025
+	actual:   Wed Jul 23 22:56:31 2025
+file: lab33_tb.sv
+	module worklib.test_d_flipflop:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		test_d_flipflop
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.test_d_flipflop:sv <0x4ca4ea7f>
+			streams:   5, words:  7674
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           8       8
+		Scalar wires:        5       -
+		Always blocks:       1       1
+		Initial blocks:      3       3
+		Pseudo assignments:  1       -
+		Process Clocks:      1       1
+	Writing initial simulation snapshot: worklib.test_d_flipflop:sv
+Loading snapshot worklib.test_d_flipflop:sv .................... Done
+xcelium> source /usr/cadence/installs/xcelium/XCELIUM2403/tools/xcelium/files/xmsimrc
+xcelium> run
+Correct at time 6: Q = 1
+Correct at time 36: Q = 0
+Correct at time 66: Q = 1
+Correct at time 96: Q = 0
+Test finished with 0 error(s).
+Simulation complete via $finish(1) at time 116 NS + 0
+./lab33_tb.sv:72         $finish;
+xcelium> exit
+TOOL:	xrun(64)	24.03-s007: Exiting on Jul 23, 2025 at 22:56:33 EEST  (total: 00:00:00)

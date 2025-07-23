@@ -1,0 +1,8 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(23Jul2025:22:47:49):( xrun -sv lab33.sv lab33_tb.sv )&&(./xcelium.d/env.d/env.history.23Jul2025_22_47_49)
+s2::(23Jul2025:22:48:27):( xrun -sv lab33.sv lab33_tb.sv )&&(./xcelium.d/env.d/env.history.23Jul2025_22_48_27)
+s3::(23Jul2025:22:49:47):( xrun -sv lab33.sv lab33_tb.sv )&&(./xcelium.d/env.d/env.history.23Jul2025_22_49_47)
+s4::(23Jul2025:22:56:33):( xrun -sv lab33.sv lab33_tb.sv )&&(./xcelium.d/env.d/env.history.23Jul2025_22_56_33)
