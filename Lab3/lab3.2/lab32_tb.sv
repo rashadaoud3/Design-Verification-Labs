@@ -18,35 +18,35 @@ initial begin
     #10;
     check_result(ina, inb, carry_in);
 
-
+    
     ina = 4'b1111;
     inb = 4'b1111;
     carry_in = 1;
     #10;
     check_result(ina, inb, carry_in);
 
-
+    
     ina = 4'b0000;
     inb = 4'b0000;
     carry_in = 0;
     #10;
     check_result(ina, inb, carry_in);
 
-
+    
     ina = 4'b0101;
     inb = 4'b1010;
     carry_in = 0;
     #10;
     check_result(ina, inb, carry_in);
 
-
+    
     ina = 4'b0011;
     inb = 4'b0101;
     carry_in = 1;
     #10;
     check_result(ina, inb, carry_in);
 
-
+    
     $finish;
 
 end
@@ -54,15 +54,15 @@ end
 
  function bit check_result(input [3:0] a, input [3:0] b, input bit cin);
     logic [4:0] expected, actual;
-
+    
       begin
       expected = a + b + cin;
       actual = {carry_out, sum_out};
 
       if (expected === actual)
-        $display("Time %0t: Pass: %b + %b + %b = %05b",$time, a, b, cin, actual);
+        $display("Pass: %b + %b + %b = %05b", a, b, cin, actual);
       else
-        $display("Time %0t: Fail: %b + %b + %b → Expected %05b, Got %05b",$time, a, b, cin, expected, actual);
+        $display("Fail: %b + %b + %b → Expected %05b, Got %05b", a, b, cin, expected, actual);
       return (expected === actual);
     end
   endfunction
@@ -70,4 +70,3 @@ end
 
 
 endmodule
-

@@ -1,28 +1,28 @@
 xrun(64): 24.03-s007: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	24.03-s007: Started on Jul 23, 2025 at 19:14:58 EEST
+TOOL:	xrun(64)	24.03-s007: Started on Jul 23, 2025 at 20:34:44 EEST
 xrun
 	-sv
-	lab31.sv
-	lab31_tb.sv
-Recompiling... reason: file './lab31_tb.sv' is newer than expected.
-	expected: Wed Jul 23 18:57:52 2025
-	actual:   Wed Jul 23 19:14:52 2025
-file: lab31_tb.sv
+	lab32.sv
+	lab32_tb.sv
+file: lab32.sv
+	module worklib.adder4bit:sv
+		errors: 0, warnings: 0
+file: lab32_tb.sv
     check_result(ina, inb, carry_in);
                |
-xmvlog: *W,FUNTSK (lab31_tb.sv,19|15): function called as a task without void'().
+xmvlog: *W,FUNTSK (lab32_tb.sv,19|15): function called as a task without void'().
     check_result(ina, inb, carry_in);
                |
-xmvlog: *W,FUNTSK (lab31_tb.sv,26|15): function called as a task without void'().
+xmvlog: *W,FUNTSK (lab32_tb.sv,26|15): function called as a task without void'().
     check_result(ina, inb, carry_in);
                |
-xmvlog: *W,FUNTSK (lab31_tb.sv,33|15): function called as a task without void'().
+xmvlog: *W,FUNTSK (lab32_tb.sv,33|15): function called as a task without void'().
     check_result(ina, inb, carry_in);
                |
-xmvlog: *W,FUNTSK (lab31_tb.sv,40|15): function called as a task without void'().
+xmvlog: *W,FUNTSK (lab32_tb.sv,40|15): function called as a task without void'().
     check_result(ina, inb, carry_in);
                |
-xmvlog: *W,FUNTSK (lab31_tb.sv,47|15): function called as a task without void'().
+xmvlog: *W,FUNTSK (lab32_tb.sv,47|15): function called as a task without void'().
 	module worklib.test_adder4bit:sv
 		errors: 0, warnings: 5
 		Caching library 'worklib' ....... Done
@@ -31,28 +31,30 @@ xmvlog: *W,FUNTSK (lab31_tb.sv,47|15): function called as a task without void'()
 		test_adder4bit
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.test_adder4bit:sv <0x6559ede7>
-			streams:   2, words:  6242
+		worklib.adder4bit:sv <0x1ead6204>
+			streams:   2, words:   533
+		worklib.test_adder4bit:sv <0x040313f5>
+			streams:   2, words:  7034
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
-		          Instances  Unique
-		Modules:          2       2
-		Registers:       12      12
-		Scalar wires:     2       -
-		Vectored wires:   3       -
-		Always blocks:    1       1
-		Initial blocks:   1       1
+		             Instances  Unique
+		Modules:             2       2
+		Registers:          11      11
+		Scalar wires:        3       -
+		Vectored wires:      5       -
+		Initial blocks:      1       1
+		Cont. assignments:   2       3
 	Writing initial simulation snapshot: worklib.test_adder4bit:sv
 Loading snapshot worklib.test_adder4bit:sv .................... Done
 xcelium> source /usr/cadence/installs/xcelium/XCELIUM2403/tools/xcelium/files/xmsimrc
 xcelium> run
-Pass: 1010 + 0001 + 1 = 01100
-Pass: 1111 + 1111 + 1 = 11111
-Pass: 0000 + 0000 + 0 = 00000
-Pass: 0101 + 1010 + 0 = 01111
-Pass: 0011 + 0101 + 1 = 01001
+Time 10: Pass: 1010 + 0001 + 1 = 01100
+Time 20: Pass: 1111 + 1111 + 1 = 11111
+Time 30: Pass: 0000 + 0000 + 0 = 00000
+Time 40: Pass: 0101 + 1010 + 0 = 01111
+Time 50: Pass: 0011 + 0101 + 1 = 01001
 Simulation complete via $finish(1) at time 50 NS + 0
-./lab31_tb.sv:50     $finish;
+./lab32_tb.sv:50     $finish;
 xcelium> exit
-TOOL:	xrun(64)	24.03-s007: Exiting on Jul 23, 2025 at 19:14:59 EEST  (total: 00:00:01)
+TOOL:	xrun(64)	24.03-s007: Exiting on Jul 23, 2025 at 20:34:45 EEST  (total: 00:00:01)

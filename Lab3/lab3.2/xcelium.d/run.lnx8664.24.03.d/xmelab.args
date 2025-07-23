@@ -2,12 +2,8 @@
 // File created by:  xrun
 // Do not modify this file
 //
+-no_analogsolver
 -MESSAGES
-+EMGRLOG
-xrun.log
--XLSTIME
-1753292084
--XLKEEP
 -XLMODE
 ./xcelium.d/run.lnx8664.24.03.d
 -RUNMODE
@@ -15,7 +11,6 @@ xrun.log
 ./xcelium.d/run.lnx8664.24.03.d/cds.lib
 -HDLVAR
 ./xcelium.d/run.lnx8664.24.03.d/hdl.var
--XLNAME
-xrun
--XLVERSION
-"TOOL:	xrun(64)	24.03-s007"
+-WORK
+worklib
+-HASXLMODE

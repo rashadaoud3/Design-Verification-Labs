@@ -3,5 +3,5 @@
 // Do not modify this file
 //
 -sv
-lab32.sv
-lab32_tb.sv
+lab31.sv
+lab31_tb.sv

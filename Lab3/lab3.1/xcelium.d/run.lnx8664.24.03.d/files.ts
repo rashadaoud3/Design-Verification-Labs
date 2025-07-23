@@ -1,2 +1,2 @@
-1753283896 /home/Trainee8/rasha/lab3/lab3.1/lab31.sv
-1753287292 /home/Trainee8/rasha/lab3/lab3.1/lab31_tb.sv
+1753291877 /home/Trainee8/rasha/lab3/lab3.2/lab32.sv
+1753292068 /home/Trainee8/rasha/lab3/lab3.2/lab32_tb.sv

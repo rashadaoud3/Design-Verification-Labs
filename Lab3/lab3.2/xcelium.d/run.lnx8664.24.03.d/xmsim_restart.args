@@ -6,7 +6,7 @@
 +EMGRLOG
 xrun.log
 -XLSTIME
-1753292084
+1753287298
 -XLKEEP
 -XLMODE
 ./xcelium.d/run.lnx8664.24.03.d
@@ -19,3 +19,5 @@ xrun.log
 xrun
 -XLVERSION
 "TOOL:	xrun(64)	24.03-s007"
+-XLNAME
+./xcelium.d/run.lnx8664.24.03.d/orionvtech_2134095
