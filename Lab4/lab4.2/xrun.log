@@ -1,0 +1,44 @@
+xrun(64): 24.03-s007: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.03-s007: Started on Jul 28, 2025 at 14:45:15 EEST
+xrun
+	-sv
+	lab42.sv
+	lab42_tb.sv
+Recompiling... reason: file './lab42.sv' is newer than expected.
+	expected: Mon Jul 28 14:36:18 2025
+	actual:   Mon Jul 28 14:45:11 2025
+file: lab42.sv
+	module worklib.memory_module:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		testbench
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.testbench:sv <0x6295cc0c>
+			streams:   7, words:  7404
+		worklib.memory_module:sv <0x33aeaaed>
+			streams:   1, words:   507
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 2       2
+		Registers:               8       7
+		Initial blocks:          4       4
+		Parallel blocks:         1       1
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.testbench:sv
+Loading snapshot worklib.testbench:sv .................... Done
+xcelium> source /usr/cadence/installs/xcelium/XCELIUM2403/tools/xcelium/files/xmsimrc
+xcelium> run
+Starting simulation with semaphore (avoids shared memory issue)
+Time 5000: WRITE -> mem[1] = a5
+Time 10000: READ  <- mem[1] = a5
+Time 20000: WRITE -> mem[1] = 3c
+Time 25000: READ  <- mem[1] = 3c
+Simulation complete via $finish(1) at time 25 NS + 0
+./lab42_tb.sv:46     $finish;
+xcelium> exit
+TOOL:	xrun(64)	24.03-s007: Exiting on Jul 28, 2025 at 14:45:15 EEST  (total: 00:00:00)

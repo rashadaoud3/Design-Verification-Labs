@@ -1,0 +1,5 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(29Jul2025:14:27:49):( xrun -sv parta6.sv parta6_tb.sv )&&(./xcelium.d/env.d/env.history.29Jul2025_14_27_49)

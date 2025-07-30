@@ -1,0 +1,42 @@
+xrun(64): 24.03-s007: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.03-s007: Started on Jul 28, 2025 at 14:58:50 EEST
+xrun
+	-sv
+	lab43.sv
+	lab43_tb.sv
+Recompiling... reason: file './lab43_tb.sv' is newer than expected.
+	expected: Mon Jul 28 14:51:02 2025
+	actual:   Mon Jul 28 14:58:25 2025
+file: lab43_tb.sv
+	module worklib.testbench:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		mailbox_example
+		testbench
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.testbench:sv <0x6ff4a683>
+			streams:   5, words:  7646
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 2       2
+		Registers:               3       3
+		Initial blocks:          1       1
+		Parallel blocks:         1       1
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.mailbox_example:sv
+Loading snapshot worklib.mailbox_example:sv .................... Done
+xcelium> source /usr/cadence/installs/xcelium/XCELIUM2403/tools/xcelium/files/xmsimrc
+xcelium> run
+Simulation with mailbox communication starting...
+Time 0: task1 putting (42, "Task1_Message") into mailbox
+Time 10000: task2 received (42, "Task1_Message") from mailbox
+Simulation finished.
+Simulation complete via $finish(1) at time 10 NS + 0
+./lab43_tb.sv:46     $finish;
+xcelium> exit
+TOOL:	xrun(64)	24.03-s007: Exiting on Jul 28, 2025 at 14:58:51 EEST  (total: 00:00:01)

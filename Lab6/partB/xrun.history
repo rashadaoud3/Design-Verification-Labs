@@ -1,0 +1,4 @@
+#e1(29Jul2025:14:33:18): source ./xcelium.d/env.d/env.history.29Jul2025_14_33_18
+s1(29Jul2025:14:33:18):  xrun -sv partb6.sv partb6_tb.sv 
+#e2(29Jul2025:14:33:29): source ./xcelium.d/env.d/env.history.29Jul2025_14_33_29
+s2(29Jul2025:14:33:29):  xrun -sv partb6.sv partb6_tb.sv 

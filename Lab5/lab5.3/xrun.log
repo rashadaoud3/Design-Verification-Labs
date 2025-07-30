@@ -1,0 +1,44 @@
+xrun(64): 24.03-s007: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.03-s007: Started on Jul 28, 2025 at 15:53:46 EEST
+xrun
+	-sv
+	lab53.sv
+	lab53_tb.sv
+file: lab53.sv
+file: lab53_tb.sv
+	module worklib.testbench:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		$unit_0x39fdcb25
+		testbench
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.testbench:sv <0x3cd486b0>
+			streams:   1, words:  4495
+		worklib.\$unit_0x39fdcb25 :compilation_unit <0x4f000032>
+			streams:  22, words:  7816
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                    1       1
+		Registers:                 22      23
+		Initial blocks:             2       2
+		Compilation units:          1       1
+		SV Class declarations:      3       3
+		SV Class specializations:   3       3
+	Writing initial simulation snapshot: worklib.testbench:sv
+Loading snapshot worklib.testbench:sv .................... Done
+xcelium> source /usr/cadence/installs/xcelium/XCELIUM2403/tools/xcelium/files/xmsimrc
+xcelium> run
+SL1 after shiftLeft: 34
+SR1 after shiftRight: 1e
+Total Register instances: 3
+SLR instance count (via ShiftLeftRegister): 3
+SRR instance count (via ShiftRightRegister): 3
+Simulation complete via $finish(1) at time 0 FS + 0
+./lab53_tb.sv:27     $finish;
+xcelium> exit
+TOOL:	xrun(64)	24.03-s007: Exiting on Jul 28, 2025 at 15:53:46 EEST  (total: 00:00:00)

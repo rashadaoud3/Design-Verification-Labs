@@ -1,0 +1,8 @@
+#e1(28Jul2025:14:47:34): source ./xcelium.d/env.d/env.history.28Jul2025_14_47_34
+s1(28Jul2025:14:47:34):  xrun -sv lab43.sv lab43_tb.sv 
+#e2(28Jul2025:14:49:27): source ./xcelium.d/env.d/env.history.28Jul2025_14_49_27
+s2(28Jul2025:14:49:27):  xrun -sv lab43.sv lab43_tb.sv 
+#e3(28Jul2025:14:51:06): source ./xcelium.d/env.d/env.history.28Jul2025_14_51_06
+s3(28Jul2025:14:51:06):  xrun -sv lab43.sv lab43_tb.sv 
+#e4(28Jul2025:14:58:51): source ./xcelium.d/env.d/env.history.28Jul2025_14_58_51
+s4(28Jul2025:14:58:51):  xrun -sv lab43.sv lab43_tb.sv 
